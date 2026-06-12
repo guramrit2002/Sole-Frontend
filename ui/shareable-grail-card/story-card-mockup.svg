@@ -1,0 +1,113 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(540 620) rotate(90) scale(520 500)">
+      <stop stop-color="#D9FF3F" stop-opacity="0.34"/>
+      <stop offset="0.42" stop-color="#D9FF3F" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#D9FF3F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardStroke" x1="140" y1="98" x2="947" y2="1775" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9FF3F" stop-opacity="0.45"/>
+      <stop offset="0.55" stop-color="#D9FF3F" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="38" stdDeviation="40" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="shoeShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="34" stdDeviation="28" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1920" fill="#050505"/>
+  <rect width="1080" height="1920" fill="url(#glow)"/>
+
+  <g opacity="0.16">
+    <path d="M-40 380C120 280 236 446 384 334C542 214 620 368 790 254C932 160 1050 226 1128 176" stroke="#D9FF3F" stroke-width="16" stroke-linecap="round"/>
+    <path d="M-92 1540C88 1432 208 1595 410 1488C620 1378 696 1535 872 1412C1004 1320 1104 1354 1168 1310" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="920" cy="470" r="118" stroke="#D9FF3F" stroke-width="10"/>
+    <circle cx="145" cy="1180" r="82" stroke="#D9FF3F" stroke-width="8"/>
+  </g>
+
+  <rect x="50" y="50" width="980" height="1820" rx="44" fill="#090909" stroke="url(#cardStroke)" stroke-width="2"/>
+
+  <g transform="translate(72 72)">
+    <rect x="0" y="0" width="42" height="42" rx="10" fill="#D9FF3F"/>
+    <path d="M24 7L11 25H22L18 36L33 17H22L24 7Z" fill="#050505"/>
+    <text x="56" y="30" fill="#FFFFFF" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">Sole</text>
+    <text x="772" y="30" fill="#D9FF3F" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">GRAIL DROP</text>
+  </g>
+
+  <g transform="translate(72 166)">
+    <text x="0" y="0" fill="#D9FF3F" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">MY GRAIL</text>
+    <text x="0" y="112" fill="#FFFFFF" font-family="Bebas Neue, Impact, sans-serif" font-size="112" letter-spacing="2">JORDAN</text>
+    <text x="0" y="210" fill="#FFFFFF" font-family="Bebas Neue, Impact, sans-serif" font-size="112" letter-spacing="2">GRAILS</text>
+    <text x="0" y="270" fill="#A1A1AA" font-family="Space Grotesk, Arial, sans-serif" font-size="28">Pairs I waited years to own.</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="96" y="520" width="888" height="448" rx="36" fill="#F3F3EF"/>
+    <rect x="96.5" y="520.5" width="887" height="447" rx="35.5" stroke="#D9FF3F" stroke-opacity="0.32"/>
+  </g>
+
+  <g filter="url(#shoeShadow)" transform="translate(165 608)">
+    <path d="M38 218C126 182 214 139 301 95C358 66 428 67 488 96L624 162C668 183 713 192 761 190L770 235C689 270 563 285 405 279C275 274 154 257 38 218Z" fill="#161616"/>
+    <path d="M92 198C168 171 234 135 307 98C358 72 418 73 470 99L592 160C632 180 678 188 726 184L738 211C662 236 551 249 404 244C277 240 174 225 92 198Z" fill="#FFFFFF"/>
+    <path d="M150 182C205 162 267 125 319 104C350 91 390 93 425 111L525 164C557 181 596 190 645 192C602 205 521 211 403 208C300 206 216 197 150 182Z" fill="#D9FF3F"/>
+    <path d="M244 143L320 108L415 112L477 146L388 160L244 143Z" fill="#101010"/>
+    <path d="M90 205C226 256 566 278 770 235" stroke="#050505" stroke-width="20" stroke-linecap="round"/>
+    <path d="M100 200C226 239 569 258 752 224" stroke="#D9FF3F" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(72 1034)">
+    <rect x="0" y="0" width="444" height="182" rx="24" fill="white" fill-opacity="0.045" stroke="#D9FF3F" stroke-opacity="0.18"/>
+    <text x="28" y="48" fill="#A1A1AA" font-family="Space Grotesk, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">TOTAL SHOES</text>
+    <text x="28" y="132" fill="#FFFFFF" font-family="Bebas Neue, Impact, sans-serif" font-size="76" letter-spacing="1">12</text>
+    <rect x="492" y="0" width="444" height="182" rx="24" fill="white" fill-opacity="0.045" stroke="#D9FF3F" stroke-opacity="0.18"/>
+    <text x="520" y="48" fill="#A1A1AA" font-family="Space Grotesk, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">TOTAL WORTH</text>
+    <text x="520" y="132" fill="#D9FF3F" font-family="Bebas Neue, Impact, sans-serif" font-size="76" letter-spacing="1">$4,850</text>
+  </g>
+
+  <g transform="translate(72 1286)">
+    <text x="0" y="0" fill="#A1A1AA" font-family="Space Grotesk, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">FEATURED PAIRS</text>
+
+    <g transform="translate(0 32)">
+      <rect width="936" height="126" rx="18" fill="#111111" stroke="#1F1F1F"/>
+      <rect x="18" y="18" width="120" height="90" rx="14" fill="#F3F3EF"/>
+      <path d="M43 75C69 63 94 44 119 55C132 61 141 70 162 69C137 87 78 93 43 75Z" fill="#111111"/>
+      <path d="M55 72C82 63 100 51 119 57C132 62 141 69 155 69C130 78 85 81 55 72Z" fill="#D9FF3F"/>
+      <text x="160" y="54" fill="#FFFFFF" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700">Air Jordan 1 High Bred Toe</text>
+      <text x="160" y="88" fill="#D9FF3F" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700">$1,445</text>
+    </g>
+
+    <g transform="translate(0 174)">
+      <rect width="936" height="126" rx="18" fill="#111111" stroke="#1F1F1F"/>
+      <rect x="18" y="18" width="120" height="90" rx="14" fill="#F3F3EF"/>
+      <path d="M42 74C77 58 95 42 127 52C143 57 151 68 165 68C137 88 79 92 42 74Z" fill="#161616"/>
+      <path d="M58 70C84 57 103 51 128 57C140 60 147 67 156 68C124 78 87 78 58 70Z" fill="#FFFFFF"/>
+      <text x="160" y="54" fill="#FFFFFF" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700">Jordan 4 White Cement</text>
+      <text x="160" y="88" fill="#D9FF3F" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700">$340</text>
+    </g>
+
+    <g transform="translate(0 316)">
+      <rect width="936" height="126" rx="18" fill="#111111" stroke="#1F1F1F"/>
+      <rect x="18" y="18" width="120" height="90" rx="14" fill="#F3F3EF"/>
+      <path d="M41 72C72 59 93 44 118 52C134 58 145 68 164 68C134 86 79 91 41 72Z" fill="#111111"/>
+      <path d="M58 69C86 59 103 51 124 56C139 60 144 67 156 67C123 78 88 78 58 69Z" fill="#D9FF3F"/>
+      <text x="160" y="54" fill="#FFFFFF" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700">Nike Dunk Low Pine Green</text>
+      <text x="160" y="88" fill="#D9FF3F" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700">$112</text>
+    </g>
+  </g>
+
+  <g transform="translate(72 1748)">
+    <rect x="0" y="0" width="92" height="38" rx="10" fill="#D9FF3F"/>
+    <text x="19" y="26" fill="#050505" font-family="Space Grotesk, Arial, sans-serif" font-size="16" font-weight="700">Jordan</text>
+    <rect x="106" y="0" width="80" height="38" rx="10" fill="#D9FF3F"/>
+    <text x="126" y="26" fill="#050505" font-family="Space Grotesk, Arial, sans-serif" font-size="16" font-weight="700">Retro</text>
+    <rect x="200" y="0" width="82" height="38" rx="10" fill="#D9FF3F"/>
+    <text x="219" y="26" fill="#050505" font-family="Space Grotesk, Arial, sans-serif" font-size="16" font-weight="700">Grails</text>
+  </g>
+
+  <line x1="72" y1="1810" x2="1008" y2="1810" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="72" y="1858" fill="#A1A1AA" font-family="Space Grotesk, Arial, sans-serif" font-size="22">Built on Sole</text>
+  <text x="888" y="1858" fill="#A1A1AA" font-family="Space Grotesk, Arial, sans-serif" font-size="22">sole.app</text>
+</svg>
