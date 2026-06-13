@@ -33,7 +33,7 @@ function formatPrice(price) {
 }
 
 const GrailStoryCard = forwardRef(function GrailStoryCard({ grail }, ref) {
-  const heroShoe    = grail.shoes?.find(s => s.image_s3 || s.image_cutout || s.image) || null
+  const heroShoe    = grail.shoes?.find(s => s.image_s3) || null
   const featured    = grail.shoes?.slice(0, 3) || []
   const visibleTags = grail.tags?.slice(0, 4) || []
   const extraTags   = Math.max(0, (grail.tags?.length || 0) - 4)
@@ -133,9 +133,9 @@ const GrailStoryCard = forwardRef(function GrailStoryCard({ grail }, ref) {
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         overflow: 'hidden',
       }}>
-        {heroShoe?.image_s3 || heroShoe?.image_cutout || heroShoe?.image ? (
+        {heroShoe?.image_s3 ? (
           <img
-            src={heroShoe.image_s3 || heroShoe.image_cutout || heroShoe.image}
+            src={heroShoe.image_s3}
             alt={heroShoe.name}
             crossOrigin="anonymous"
             style={{
@@ -209,8 +209,8 @@ const GrailStoryCard = forwardRef(function GrailStoryCard({ grail }, ref) {
                   borderRadius: 12, flexShrink: 0, overflow: 'hidden',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                 }}>
-                  {shoe.image_s3 || shoe.image_cutout || shoe.image
-                    ? <img src={shoe.image_s3 || shoe.image_cutout || shoe.image} alt={shoe.name} crossOrigin="anonymous" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  {shoe.image_s3
+                    ? <img src={shoe.image_s3} alt={shoe.name} crossOrigin="anonymous" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     : <Footprints size={32} color="#bbb" />
                   }
                 </div>

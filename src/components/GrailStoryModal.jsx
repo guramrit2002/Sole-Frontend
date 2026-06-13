@@ -19,6 +19,25 @@ const KEYFRAMES = `
 }
 `
 
+function waitForImages(node) {
+  const images = Array.from(node.querySelectorAll('img'))
+  if (images.length === 0) return Promise.resolve()
+
+  return Promise.allSettled(images.map(img => {
+    if (img.complete && img.naturalWidth > 0) return Promise.resolve()
+
+    return new Promise(resolve => {
+      const done = () => {
+        img.removeEventListener('load', done)
+        img.removeEventListener('error', done)
+        resolve()
+      }
+      img.addEventListener('load', done, { once: true })
+      img.addEventListener('error', done, { once: true })
+    })
+  }))
+}
+
 const InstagramIcon = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -60,6 +79,7 @@ export default function GrailStoryModal({ grail, onClose }) {
 
   const getDataUrl = async () => {
     if (!cardRef.current) throw new Error('Card ref not ready.')
+    await waitForImages(cardRef.current)
     return toPng(cardRef.current, { pixelRatio: 2, cacheBust: true, width: CARD_W, height: CARD_H })
   }
 
